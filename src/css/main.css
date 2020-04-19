@@ -1,0 +1,153 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+.tuva-container {
+  position: flex;
+  display: block;
+  margin-top: 50px;
+  margin-left: 340px;
+  height: auto;
+  margin-right: 80px;
+}
+.tuva-line {
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 800px) {
+  .tuva-container {
+    margin-left: 20px;
+  }
+}
+.custom-anim {
+  animation-name: custom-fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes custom-fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+#sidenav {
+  position: fixed;
+  display: inline-block;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.divider {
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: auto;
+  border-top: 1px solid #000;
+}
+.divider h3 {
+  font-size: 20px;
+}
+
+.divider ul {
+  list-style-type: none;
+  font-weight: 600;
+}
+.divider li {
+  padding-top: 8px;
+  margin-top: 8px;
+}
+.divider ul a {
+  text-decoration: none;
+  color: #26aebc;
+}
+.active {
+  color: #fcc714 !important;
+  font-weight: 800;
+}
+.active li {
+  border-right: 3px solid #fcc714;
+}
+.divider li:hover,
+.divider li:active {
+  color: #fcc714;
+  border-right: 3px solid #fcc714;
+  cursor: pointer;
+}
+.nav {
+  display: none;
+}
+#checkbox_id {
+  float: right;
+  display: none;
+}
+#tuva-menu {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  #sidenav {
+    display: none;
+  }
+  .nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    background-color: #3d4146;
+    z-index: 100;
+    padding: 32px;
+  }
+  .nav h2 {
+    margin-top: -22px;
+    float: left;
+    color: #fff;
+  }
+  #tuva-menu {
+    display: block;
+    position: fixed;
+    top: 16px;
+    left: auto;
+    right: 10px;
+    float: right;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    background-color: #f9f9fb;
+    color: #000;
+    border-radius: 5px;
+    z-index: 101;
+  }
+  #checkbox_id:checked ~ #sidenav {
+    display: block;
+    z-index: 101;
+  }
+  .tuva-container {
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
