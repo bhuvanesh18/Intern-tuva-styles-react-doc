@@ -7,10 +7,10 @@ body {
 .tuva-container {
   position: flex;
   display: block;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 340px;
-  height: auto;
   margin-right: 80px;
+  height: auto;
 }
 .tuva-line {
   border-bottom: 1px solid #ccc;
@@ -51,8 +51,7 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #fff;
-  top: 0;
+  top: 20px;
   left: 0;
 }
 .divider {
@@ -105,49 +104,53 @@ body {
 #tuva-menu {
   display: none;
 }
-@media screen and (max-width: 800px) {
-  #sidenav {
-    display: none;
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 100;
+}
+#tuva-menu {
+  display: block;
+  position: fixed;
+  top: 24px;
+  left: auto;
+  right: 24px;
+  float: right;
+  z-index: 101;
+}
+@media only screen and (min-width: 650px) {
+  #searchInputBox {
+    width: 250px !important;
+  }
+  #searchResults {
+    left: 260px !important;
+    top: 80px !important;
   }
   .nav {
-    display: block;
-    position: fixed;
+    height: 80px !important;
+  }
+  #sidenav {
     top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    border-bottom: 2px solid #000;
-    background-color: #3d4146;
-    z-index: 100;
-    padding: 32px;
   }
-  .nav h2 {
-    margin-top: -22px;
-    float: left;
-    color: #fff;
-  }
-  #tuva-menu {
-    display: block;
-    position: fixed;
-    top: 16px;
-    left: auto;
-    right: 10px;
-    float: right;
-    border: 1px solid #000;
-    cursor: pointer;
-    padding: 5px 10px 5px 10px;
-    background-color: #f9f9fb;
-    color: #000;
-    border-radius: 5px;
-    z-index: 101;
-  }
-  #checkbox_id:checked ~ #sidenav {
-    display: block;
-    z-index: 101;
-  }
-  .tuva-container {
-    margin-top: 80px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
+}
+
+#searchResults {
+  top: 100px;
+  left: 20px;
+  width: 350px;
+  max-height: 400px;
+  overflow: auto;
+  z-index: 101;
+}
+
+.custom-search-result:hover {
+  background-color: #26aebc;
+}
+
+#searchInputBox {
+  width: 180px;
 }

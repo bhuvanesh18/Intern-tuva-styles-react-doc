@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Style Sheets
-import "./css/index.css";
 import "./css/main.css";
 
 //Home and sidenavs
@@ -50,6 +49,9 @@ import Subhead from "./components/component/subhead/index";
 import Toast from "./components/component/toast/index";
 import Tooltips from "./components/component/tooltips/index";
 import Truncate from "./components/component/truncate/index";
+
+//Marketing component
+import Marketing from "./components/Marketing";
 
 function App() {
   return (
@@ -99,6 +101,9 @@ function App() {
           <Route path="/components/toasts" exact component={Toast} />
           <Route path="/components/tooltips" exact component={Tooltips} />
           <Route path="/components/truncate" exact component={Truncate} />
+
+          {/*Test Marketing Component*/}
+          <Route path="/marketing" exact component={Marketing} />
         </Switch>
       </div>
     </Router>

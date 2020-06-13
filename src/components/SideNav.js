@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import Nav from "./Nav";
 
 class SideNav extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="nav">
-          <h2 className="font-weight-medium">Tuva Styles</h2>
-        </div>
-        <label for="checkbox_id" id="tuva-menu">
-          <h6>Menu</h6>
-        </label>
-        <input type="checkbox" id="checkbox_id" />
+        <Nav />
         <div id="sidenav" className="bg-gray-dark text-white">
           <div className="sidenavheader">
             <h2 className="text-white text-shadow-light font-weight-medium">
@@ -137,6 +132,14 @@ class SideNav extends Component {
               </NavLink>
               <NavLink to="/components/truncate" activeClassName="active">
                 <li>Truncate</li>
+              </NavLink>
+            </ul>
+          </div>
+          <div className="divider">
+            <h3 className="font-weight-medium">Marketing</h3>
+            <ul>
+              <NavLink to="/marketing" activeClassName="active">
+                <li>Marketing</li>
               </NavLink>
             </ul>
           </div>
