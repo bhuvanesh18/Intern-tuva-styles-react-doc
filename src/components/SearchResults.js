@@ -7,7 +7,7 @@ function SearchResults(props) {
   console.log(searchInputValue);
 
   const searchResults = api.filter((component) =>
-    component.keywords.includes(searchInputValue)
+    component.keywords.some((keyword) => keyword.indexOf(searchInputValue) >= 0)
   );
 
   let haveResults = false;

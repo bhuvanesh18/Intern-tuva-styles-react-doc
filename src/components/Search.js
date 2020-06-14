@@ -19,8 +19,9 @@ function Search(props) {
   const { handler, setSearchValueHandler } = props;
 
   useEffect(() => {
-    const searchInputValue = searchValue.trim();
+    let searchInputValue = searchValue.trim();
     if (searchInputValue.length > 0) {
+      searchInputValue = searchInputValue.toLowerCase();
       handler(false);
       setSearchValueHandler(searchInputValue);
       setCloseButtonShow(true);
