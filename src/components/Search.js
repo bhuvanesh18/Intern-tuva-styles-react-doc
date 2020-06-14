@@ -44,13 +44,13 @@ function Search(props) {
         />
       </form>
       {shouldCloseButtonShow && (
-        <button
+        <div
           onClick={resetSearchInput}
           id="search_close_btn"
-          className="btn btn-danger"
+          className="text-red d-block h2 mt-1"
         >
           X
-        </button>
+        </div>
       )}
     </>
   );

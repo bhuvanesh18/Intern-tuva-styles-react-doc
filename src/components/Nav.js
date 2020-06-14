@@ -19,7 +19,7 @@ function Nav() {
           "margin-left": "30px",
           "margin-right": "30px",
         });
-        $("#menu_value").text("Menu");
+        $("#menu_value").text("|||");
       }
     });
   }, []);

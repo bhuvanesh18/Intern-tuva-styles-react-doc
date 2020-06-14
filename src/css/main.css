@@ -15,9 +15,10 @@ body {
 .tuva-line {
   border-bottom: 1px solid #ccc;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 650px) {
   .tuva-container {
-    margin-left: 20px;
+    margin-left: 20px !important;
+    margin-right: 0px !important;
   }
 }
 .custom-anim {
@@ -48,11 +49,12 @@ body {
   display: inline-block;
   width: 250px;
   padding: 20px;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   top: 20px;
   left: 0;
+  z-index: 100;
 }
 .divider {
   margin-top: 8px;
@@ -94,14 +96,8 @@ body {
   border-right: 3px solid #fcc714;
   cursor: pointer;
 }
-.nav {
-  display: none;
-}
 #checkbox_id {
   float: right;
-  display: none;
-}
-#tuva-menu {
   display: none;
 }
 .nav {
@@ -111,7 +107,7 @@ body {
   left: 0;
   right: 0;
   height: 100px;
-  z-index: 100;
+  z-index: 101;
 }
 #tuva-menu {
   display: block;
@@ -144,7 +140,7 @@ body {
   width: 350px;
   max-height: 400px;
   overflow: auto;
-  z-index: 101;
+  z-index: 102;
 }
 
 .custom-search-result:hover {
@@ -153,4 +149,8 @@ body {
 
 #searchInputBox {
   width: 180px;
+}
+
+#menu_value {
+  transform: rotate(90deg);
 }
