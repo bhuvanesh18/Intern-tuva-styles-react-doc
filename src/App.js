@@ -6,7 +6,7 @@ import "./css/main.css";
 
 //Home and sidenavs
 import Home from "./components/Home";
-import SideNav from "./components/SideNav";
+import SideNav from "./components/navigation/SideNav";
 
 //Support
 import BreakPoints from "./components/support/Breakpoints/index";
@@ -51,7 +51,7 @@ import Tooltips from "./components/component/tooltips/index";
 import Truncate from "./components/component/truncate/index";
 
 //Marketing component
-import Marketing from "./components/Marketing";
+import Marketing from "./components/marketing/index";
 
 function App() {
   return (

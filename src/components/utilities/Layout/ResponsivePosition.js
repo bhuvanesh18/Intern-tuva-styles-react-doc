@@ -15,11 +15,12 @@ function ResponsivePosition() {
               style={{
                 border: "0",
                 width: "100" + "%",
-                height: "100" + "px"
+                height: "100" + "px",
               }}
               allowfullscreen="true"
+              title="Responsive-position"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -28,7 +29,7 @@ function ResponsivePosition() {
             .position-md-absolute .top-0 .right-0
           </div>
         </div>
-          `
+          `,
         ]}
         lang="html"
       />

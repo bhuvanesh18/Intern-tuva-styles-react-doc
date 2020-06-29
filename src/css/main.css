@@ -18,7 +18,7 @@ body {
 @media screen and (max-width: 650px) {
   .tuva-container {
     margin-left: 20px !important;
-    margin-right: 0px !important;
+    margin-right: 20px !important;
   }
 }
 .custom-anim {
@@ -133,7 +133,9 @@ body {
     top: 0;
   }
 }
-
+#search_close_btn {
+  cursor: pointer;
+}
 #searchResults {
   top: 100px;
   left: 20px;

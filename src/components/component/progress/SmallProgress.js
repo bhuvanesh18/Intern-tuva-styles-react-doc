@@ -10,14 +10,14 @@ function SmallProgress() {
         htmlcoderender={[
           <span className="Progress Progress--small">
             <span className="bg-blue-4" style={{ width: 50 + "%" }}></span>
-          </span>
+          </span>,
         ]}
         codeline={[
           `
-        <span class="Progress Progress--large">
+        <span class="Progress Progress--small">
           <span class="bg-blue-4" style="width: 50%;"></span>
         </span>
-        `
+        `,
         ]}
         lang="html"
       />

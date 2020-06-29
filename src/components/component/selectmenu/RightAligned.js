@@ -17,6 +17,7 @@ function RightAligned() {
                 width: "100" + "%",
                 height: "250" + "px",
               }}
+              title="Select-Menu-RightAligned"
             ></iframe>
           </div>,
         ]}

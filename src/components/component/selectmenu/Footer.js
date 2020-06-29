@@ -17,6 +17,7 @@ function Footer() {
                 width: "100" + "%",
                 height: "320" + "px",
               }}
+              title="Select-Menu-Footer"
             ></iframe>
           </div>,
         ]}

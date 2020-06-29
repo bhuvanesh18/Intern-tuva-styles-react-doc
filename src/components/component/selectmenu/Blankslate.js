@@ -17,6 +17,7 @@ function Blankslate() {
                 width: "100" + "%",
                 height: "280" + "px",
               }}
+              title="Select-Menu-Blankslate"
             ></iframe>
           </div>,
         ]}

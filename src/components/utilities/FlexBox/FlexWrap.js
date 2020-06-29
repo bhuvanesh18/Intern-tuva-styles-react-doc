@@ -5,7 +5,7 @@ import {
   SubHeading,
   CodeBlocks,
   TableHeading,
-  TableData
+  TableData,
 } from "../../mini_components";
 
 function FlexWrap() {
@@ -19,7 +19,7 @@ function FlexWrap() {
           `
   .flex-wrap     { flex-wrap: wrap; }
   .flex-nowrap   { flex-wrap: nowrap; }
-        `
+        `,
         ]}
         lang="css"
       />
@@ -55,7 +55,7 @@ function FlexWrap() {
             <div className="p-5 px-6 border bg-gray-light">7</div>
             <div className="p-5 px-6 border bg-gray-light">8</div>
             <div className="p-5 px-6 border bg-gray-light">9</div>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -70,7 +70,7 @@ function FlexWrap() {
    <div class="p-5 px-6 border bg-gray-light">8</div>
    <div class="p-5 px-6 border bg-gray-light">9</div>
   </div>
-       `
+       `,
         ]}
         lang="html"
       />
@@ -87,7 +87,7 @@ function FlexWrap() {
             <div className="p-5 px-6 border bg-gray-light">7</div>
             <div className="p-5 px-6 border bg-gray-light">8</div>
             <div className="p-5 px-6 border bg-gray-light">9</div>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -102,7 +102,7 @@ function FlexWrap() {
     <div class="p-5 px-6 border bg-gray-light">8</div>
     <div class="p-5 px-6 border bg-gray-light">9</div>
   </div>
-        `
+        `,
         ]}
         lang="html"
         style="overflow-x-scroll"

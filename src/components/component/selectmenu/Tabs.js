@@ -17,6 +17,7 @@ function Tabs() {
                 width: "100" + "%",
                 height: "380" + "px",
               }}
+              title="Select-Menu-Tabs"
             ></iframe>
           </div>,
         ]}

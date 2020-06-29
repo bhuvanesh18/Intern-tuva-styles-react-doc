@@ -32,11 +32,12 @@ function Sticky() {
               style={{
                 border: "0",
                 maxWidth: "300" + "px",
-                height: "300" + "px"
+                height: "300" + "px",
               }}
               allowfullscreen="true"
+              title="Sticky-1"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -64,7 +65,7 @@ function Sticky() {
         </section>
 
         <style>.frame-example { max-width: 300px; height: 300px; }</style>
-          `
+          `,
         ]}
         lang="html"
       />
@@ -79,11 +80,12 @@ function Sticky() {
               style={{
                 border: "0",
                 maxWidth: "300" + "px",
-                height: "300" + "px"
+                height: "300" + "px",
               }}
               allowfullscreen="true"
+              title="Sticky-2"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -104,7 +106,7 @@ function Sticky() {
         </section>
 
         <style>.frame-example { max-width: 300px; height: 300px; }</style>
-          `
+          `,
         ]}
         lang="html"
       />
@@ -119,11 +121,12 @@ function Sticky() {
               style={{
                 border: "0",
                 width: "100" + "%",
-                height: "100" + "px"
+                height: "100" + "px",
               }}
               allowfullscreen="true"
+              title="Sticky-3"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -150,7 +153,7 @@ function Sticky() {
             <span class="border position-sticky right-0 bg-gray p-4">...</span>
           </section>
         </div>
-          `
+          `,
         ]}
       />
     </React.Fragment>

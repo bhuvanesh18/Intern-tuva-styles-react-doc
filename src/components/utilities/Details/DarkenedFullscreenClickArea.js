@@ -18,10 +18,11 @@ function DarkenedFullscreenClickArea() {
               style={{
                 border: "0",
                 width: "100" + "%",
-                height: "50" + "px"
+                height: "50" + "px",
               }}
+              title="Darkend Full Screen"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -29,7 +30,7 @@ function DarkenedFullscreenClickArea() {
           <summary class="btn">More</summary>
           <div class="border p-3 mt-2">Hidden text</div>
         </details>
-          `
+          `,
         ]}
         lang="html"
       />

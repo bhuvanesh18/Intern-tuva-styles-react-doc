@@ -34,7 +34,7 @@ function Position() {
                   width: "100" + "px",
                   height: "100" + "px",
                   top: "12" + "px",
-                  left: "12" + "px"
+                  left: "12" + "px",
                 }}
               >
                 Two
@@ -52,7 +52,7 @@ function Position() {
                 Four
               </div>
             </div>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -68,7 +68,7 @@ function Position() {
         <div class="d-inline-block float-left bg-blue text-white m-3" style="width:100px; height:100px;">
           Four
         </div>
-        `
+        `,
         ]}
         lang="html"
       />
@@ -87,7 +87,7 @@ function Position() {
                 Fries
               </a>
             </div>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -98,7 +98,7 @@ function Position() {
           <a href="#url" class="d-block p-1">Fries</a>
         </div>
       </div>
-        `
+        `,
         ]}
         lang="html"
       />
@@ -115,8 +115,9 @@ function Position() {
               frameborder="0"
               style={{ border: "0", width: "100" + "%", height: "64" + "px" }}
               allowfullscreen="true"
+              title="Position-1"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -125,7 +126,7 @@ function Position() {
           .position-fixed
         </div>
       </div>
-        `
+        `,
         ]}
         lang="html"
       />
@@ -138,8 +139,9 @@ function Position() {
               frameborder="0"
               style={{ border: "0", width: "100" + "%", height: "64" + "px" }}
               allowfullscreen="true"
+              title="Position-2"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -157,7 +159,7 @@ function Position() {
             .bottom-0 .left-0
           </div>
         </div>
-          `
+          `,
         ]}
         lang="html"
       />
@@ -173,15 +175,16 @@ function Position() {
               frameborder="0"
               style={{ border: "0", width: "100" + "%", height: "64" + "px" }}
               allowfullscreen="true"
+              title="Position-3"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
         <div class="position-fixed left-0 right-0 p-3 bg-gray-dark text-white">
           .position-fixed .left-0 .right-0
         </div>
-          `
+          `,
         ]}
         lang="html"
       />

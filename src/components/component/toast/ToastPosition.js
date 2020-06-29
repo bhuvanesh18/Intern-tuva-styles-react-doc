@@ -12,8 +12,9 @@ function ToastPosition() {
             <iframe
               src="./../../output/component/toasts/ToastPosition_output.html"
               frameBorder="0"
+              title="Toast-Position"
             ></iframe>
-          </div>
+          </div>,
         ]}
         codeline={[
           `
@@ -32,7 +33,7 @@ function ToastPosition() {
               <span class="Toast-content">Toast message goes here.</span>
             </div>
           </div>
-        </div>`
+        </div>`,
         ]}
         lang="html"
       />

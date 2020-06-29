@@ -17,6 +17,7 @@ function SelectedState() {
                 width: "100" + "%",
                 height: "300" + "px",
               }}
+              title="Select-Menu-SelectedState"
             ></iframe>
           </div>,
         ]}
